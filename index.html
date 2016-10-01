@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Search Abstraction Layer Microservice</title>
+</head>
+    <body>
+        <h1>Terry's Image Search Abstraction Layer Microservice</h1>
+        <br>
+        <form action='/new_search' method='GET'>
+            Your search: <input type='text' name='search'>
+            Results page (1-10): <input type='number' min='1' max='10' name='page'>
+            <input type='submit' value='Submit'>
+        </form>
+        <form action='/recent_searches' method='GET'>
+            <input type='submit' value='See recent searches'>
+        </form>
+    </body>
+</html>
