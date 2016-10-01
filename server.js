@@ -9,7 +9,7 @@ const imageSearch = require('node-google-image-search');
 require('dotenv').config();
 
 //add these to the .env file
-MongoClient.connect('mongodb://terryoshea:pojkentalarinte@ds047146.mlab.com:47146/image-search-abstraction', (err, db) => {
+MongoClient.connect('mongodb://' + process.env.DB_CREDS + '@ds047146.mlab.com:47146/image-search-abstraction', (err, db) => {
 	if (err) return console.log(err)
 	var searchesdb = db.collection('searches');
 
